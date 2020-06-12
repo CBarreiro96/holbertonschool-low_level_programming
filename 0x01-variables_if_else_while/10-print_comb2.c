@@ -1,22 +1,24 @@
 #include <stdio.h>
 /**
- *main - Writing a program that prints numbers from 0 to 99.
- *Return: The value will return 0.
+ * main - main block
+ * Description: Print numbers from 0 to 99.
+ * Numbers must be separated by commas followed by a space.
+ * You can only use `putchar` to print to console.
+ * You can only use `putchar` up to 5 times.
+ * You are not allowed to use variables of type `char`.
+ * Return: 0
  */
-
 int main(void)
 {
-int a, b;
-for (a = 0; a < 10; a++)
+int a, b, c;
+for (a = 0; a < 100; a++)
 {
-for (b = 0; b < 10; b++)
-{
+b = a / 10;
+c = a % 10;
 putchar(b + '0');
-putchar(a + '0');
-if (b == 9 && a == 9)
+putchar(c + '0');
+if (a < 99)
 {
-break;
-}
 putchar(',');
 putchar(' ');
 }
