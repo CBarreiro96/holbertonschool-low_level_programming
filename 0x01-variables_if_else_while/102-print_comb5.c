@@ -9,8 +9,8 @@
  */
 int main(void)
 {
-	int x, y; 
-	int a, b, i, j; 
+int x, y;
+int a, b, i, j;
 x = 0;
 while (x < 100)
 {
