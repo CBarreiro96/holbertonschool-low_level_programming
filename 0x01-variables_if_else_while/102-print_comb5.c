@@ -8,7 +8,8 @@
  * Return: 0
  */
 int main(void)
-{ int x, a, b, y, i, j, l, k;
+{
+int x, a, b, y, i, j, l, k;
 x = 0;
 while (x < 100)
 {
