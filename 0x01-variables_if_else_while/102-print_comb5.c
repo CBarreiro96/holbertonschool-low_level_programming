@@ -10,9 +10,7 @@
 int main(void)
 {
 	int x, y; 
-	int a, b;
-	int i, j; 
-	int l, k;
+	int a, b, i, j; 
 x = 0;
 while (x < 100)
 {
@@ -23,9 +21,8 @@ while (y < 100)
 {
 i = y % 10;
 j = y / 10;
-l = a + b;
-k = i + j;
-if (l < k)
+
+if (b < j || (b == j && a < i))
 {
 putchar(b + '0');
 putchar(a + '0');
@@ -33,7 +30,7 @@ putchar(' ');
 putchar(j + '0');
 putchar(i + '0');
 
-if (k < 18)
+if (!(b == 9 && a == 8))
 {
 putchar(',');
 putchar(' ');
