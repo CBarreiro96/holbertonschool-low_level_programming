@@ -9,7 +9,10 @@
  */
 int main(void)
 {
-int x, a, b, y, i, j, l, k;
+	int x, y; 
+	int a, b;
+	int i, j; 
+	int l, k;
 x = 0;
 while (x < 100)
 {
