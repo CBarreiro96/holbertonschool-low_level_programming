@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * main - This program prints exactly the sentence of Dora Korpar,
+ * main - This program print with comand write the sentence of Dora,
  * followed by a new line, to the standard error.
  *
  * Return: (1) to error.
