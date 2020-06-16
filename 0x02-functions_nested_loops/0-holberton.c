@@ -8,6 +8,7 @@ int main(void)
 {
 	char Inicio[] = "Holberton";
 	int i = 0;
+
 	while (Inicio[i] != '\0')
 	{
 		_putchar(Inicio[i]);
