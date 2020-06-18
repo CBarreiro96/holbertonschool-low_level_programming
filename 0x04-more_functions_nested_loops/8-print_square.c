@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- *
- *
+ *print_square - Printf #
+ *@size: Number type of integer
  */
 void print_square(int size)
 {
@@ -11,10 +11,11 @@ void print_square(int size)
 	if (size > 0)
 	{
 		i = 0;
-		while(i < size)
+
+		while (i < size)
 		{
 			j = 0;
-			while(j < size)
+			while (j < size)
 			{
 				_putchar('#');
 				j++;
