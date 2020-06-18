@@ -1,11 +1,12 @@
 #include <stdio.h>
 /**
- *
- *
+ *main - Multiple of 3 and 5
+ *Return:There is no return value.
  */
 int main(void)
 {
 	int i = 1;
+
 	while (i < 101)
 	{
 		if (i % 3 == 0)
@@ -13,7 +14,7 @@ int main(void)
 			printf("Fizz");
 			printf(" ");
 		}
-		else if (i % 5 == 0 )
+		else if (i % 5 == 0)
 		{
 			printf("Buzz");
 			printf(" ");
