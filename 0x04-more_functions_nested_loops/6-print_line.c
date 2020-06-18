@@ -2,21 +2,17 @@
 /**
  *print_line - printf character _
  *@n: Numbre type of integer
- */
+ *Description: Only use _puchar
+*/
 void print_line(int n)
 {
 	int i;
 
-	if (n > 0)
-	{
-		i = 0;
-		while (i <= n)
+	i = 0;
+		while (i < n)
 		{
 			_putchar('_');
 			i++;
 		}
-		_putchar('\n');
-	}
-	else
 		_putchar('\n');
 }
