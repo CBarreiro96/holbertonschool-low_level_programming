@@ -1,15 +1,24 @@
 #include <stdio.h>
 /**
- *main - Multiple of 3 and 5
- *Return:There is no return value.
+ *main - FizzBuzz test.
+ *Return: There is no return value.
+ *
  */
+
 int main(void)
+
 {
 	int i = 1;
 
 	while (i < 101)
 	{
-		if (i % 3 == 0)
+		if (i % 3 == 0 && i % 5 == 0)
+		{
+			printf("FizzBuzz");
+			printf(" ");
+			i++;
+		}
+		else if (i % 3 == 0)
 		{
 			printf("Fizz");
 			printf(" ");
@@ -25,12 +34,6 @@ int main(void)
 			printf(" ");
 			i++;
 		}
-		else if (i % 3 == 0 && i % 5 == 0)
-		{
-			printf("FizzBuzz");
-			printf(" ");
-			i++;
-		}
 		else
 		{
 			printf("%d", i);
@@ -40,4 +43,5 @@ int main(void)
 	}
 	printf("\n");
 	return (0);
+
 }
