@@ -13,6 +13,7 @@ int main(void)
 		{
 			printf("Fizz");
 			printf(" ");
+			i++;
 		}
 		else if (i % 5 == 0)
 		{
@@ -22,18 +23,20 @@ int main(void)
 				break;
 			}
 			printf(" ");
+			i++;
 		}
 		else if (i % 3 == 0 && i % 5 == 0)
 		{
 			printf("FizzBuzz");
 			printf(" ");
+			i++;
 		}
 		else
 		{
 			printf("%d", i);
 			printf(" ");
+			i++;
 		}
-		i++;
 	}
 	printf("\n");
 	return (0);
