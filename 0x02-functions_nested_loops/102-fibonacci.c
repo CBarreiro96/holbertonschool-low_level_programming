@@ -8,7 +8,7 @@ int main(void)
 	long int Sust;
 	long int i = 1;
 	long int j = 2;
-	int C = 3;
+	int C = 2;
 
 	printf("%lu, ", i);
 	while (C <= 50)
