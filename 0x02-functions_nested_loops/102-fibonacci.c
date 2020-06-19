@@ -1,14 +1,16 @@
 #include <stdio.h>
+
 /**
- *main - Fibonacci serie
- *Return: There are not reuturn.
+ * main - main block
+ * Description: Print the first 50 fibonacci numbers, starting with 1 and 2.
+ * Numbers must be coma and space separated.
+ * Return: 0
  */
 int main(void)
 {
-	long int Sust;
-	long int i = 1;
-	long int j = 2;
 	int C = 2;
+	long int i = 1, j = 2;
+	long int Suplent;
 
 	printf("%lu, ", i);
 	while (C <= 50)
@@ -18,12 +20,14 @@ int main(void)
 			printf("%lu\n", j);
 		}
 		else
+		{
 			printf("%lu, ", j);
+		}
 
-		Sust = j;
+		Suplent = j;
 		j += i;
-		i = Sust;
-	C++;
+		i = Suplent;
+		C++;
 	}
 
 	return (0);
