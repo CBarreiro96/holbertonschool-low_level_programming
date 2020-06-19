@@ -11,7 +11,7 @@ int main(void)
 	int C = 3;
 
 	printf("%lu, ", i);
-	while ( C <= 50)
+	while (C <= 50)
 	{
 		if (C == 50)
 		{
