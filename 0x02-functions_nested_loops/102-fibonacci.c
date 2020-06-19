@@ -5,32 +5,26 @@
  */
 int main(void)
 {
-	int i = 1;
-	int a[50];
-	int j = 0;
+	long int Sust;
+	long int i = 1;
+	long int j = 2;
+	int C = 3;
 
-	while (i <= 51)
+	printf("%lu, ", i);
+	while ( C <= 50)
 	{
-		if (i > 2)
+		if (C == 50)
 		{
-			a[i-1] = a[i - 2] + a[i - 3];
+			printf("%lu \n", j);
 		}
 		else
-			a[i-1] = i;
-		i++;
+			printf("%lu, ", j);
+
+		Sust = j;
+		j += i;
+		i = Sust;
+	C++;
 	}
 
-	while (j <= 50)
-	{
-		printf("%d", a[j]);
-		if(j!=50)
-		{
-			printf(",");
-			printf(" ");
-		}
-		else
-			printf("\n");
-		j++;
-	}
 	return (0);
 }
