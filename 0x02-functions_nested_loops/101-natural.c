@@ -1,8 +1,10 @@
 #include <stdio.h>
+
 /**
  *main - printf sum of multiples of 3 or 5 until 1024
  *Return: There are not anything.
  */
+
 int main(void)
 {
 	int c;
@@ -15,6 +17,6 @@ int main(void)
 			sum += c;
 		}
 	}
-	printf("%d", sum);
+	printf("%d\n", sum);
 	return (0);
 }
