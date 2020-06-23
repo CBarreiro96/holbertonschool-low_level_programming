@@ -1,8 +1,10 @@
 #include "holberton.h"
+
 /**
  *print_rev - Printf reverse of variable string
  *@s: Pointer type of char.
  */
+
 void print_rev(char *s)
 {
 	int i;
