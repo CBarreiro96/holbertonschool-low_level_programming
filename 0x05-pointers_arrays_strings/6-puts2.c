@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- *
- *
+ *puts2 - Printf even number.
+ *@str: Pointer type of char.
  */
 void puts2(char *str)
 {
