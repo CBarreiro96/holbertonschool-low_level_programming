@@ -15,7 +15,7 @@ void rev_string(char *s)
 
 	Long = i;
 
-	for (i--, c = 0 ; c <= Long / 2 ; i--, c++)
+	for (i--, c = 0 ; c < Long / 2 ; i--, c++)
 	{
 		k = s[c];
 		s[c] = s[i];
