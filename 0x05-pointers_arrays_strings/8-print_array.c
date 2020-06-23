@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  *print_array - Printf array
  *@a: pointer typo of a
