@@ -6,22 +6,29 @@
  */
 char *cap_string(char *var)
 {
-	int i, a;
-	char restriccion[] = ",;.!?(){}\n\t\" ";
+	int i;
 
-	for (i = 0 ; var[i] != '\0'; i++)
+	i = 0;
+	while (var[i] != '\0')
 	{
-		for (a = 0; restriccion[a] != '\0'; a++)
+		if (var[i] >= 97 && m[i] <= 122)
 		{
-			if (restriccion[a] == var[i])
+			if (i == 0)
 			{
-				if (var[i + 1] > 96 && var[i + 1] < 123)
-				{
-					var[i + 1] -= 32;
-				}
+				m[i] -= 32;
+			}
+			if (m[i - 1] == ' ' || m[i - 1] == '\t' ||
+			     m[i - 1] == '\n' || m[i - 1] == ',' ||
+			     m[i - 1] == ';' || m[i - 1] == '.' ||
+			     m[i - 1] == '!' || m[i - 1] == '?' ||
+			     m[i - 1] == '"' || m[i - 1] == '(' ||
+			     m[i - 1] == ')' || m[i - 1] == '{' ||
+			    m[i - 1] == '}')
+			{
+				m[i] -= 32;
 			}
 		}
-
+		i++;
 	}
-	return (var);
+	return (m);
 }
