@@ -11,14 +11,14 @@ char *leet(char *a)
 	char Number[] = "4433007711";
 
 	i = 0;
-	while (o[i] != '\0')
+	while (a[i] != '\0')
 	{
 		j = 0;
-		while (Letter[z] != '\0')
+		while (Letter[j] != '\0')
 		{
-			if (a[i] == Letter[z])
+			if (a[i] == Letter[j])
 			{
-				a[i] = Number[z];
+				a[i] = Number[j];
 			}
 			j++;
 		}
