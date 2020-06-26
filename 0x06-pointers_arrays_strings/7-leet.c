@@ -7,16 +7,16 @@
 char *leet(char *a)
 {
 	int i, j;
-	char Letter[] = "aAeEoOtTlL";
+	char s[] = "aAeEoOtTlL";
 	char Number[] = "4433007711";
 
 	i = 0;
 	while (a[i] != '\0')
 	{
 		j = 0;
-		while (Letter[j] != '\0')
+		while (s[j] != '\0')
 		{
-			if (a[i] == Letter[j])
+			if (a[i] == s[j])
 			{
 				a[i] = Number[j];
 			}
