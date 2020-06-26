@@ -4,23 +4,25 @@
  *@a:Pointer type of char
  *Return:return the variable a.
  */
-char *leet(char *a)
+char *leet(char *o)
 {
-	int i;
+	int i, z;
+	char s[] = "aAeEoOtTlL";
+	char s2[] = "4433007711";
 
-	for (i = 0; a[i] != '\0'; i++)
+	i = 0;
+	while (o[i] != '\0')
 	{
-		if (a[i] == 'a' || a[i] == 'A')
-			a[i] = '4';
-		if (a[i] == 'e' || a[i] == 'E')
-			a[i] = '3';
-		if (a[i] == 'o' || a[i] == 'O')
-			a[i] = '0';
-		if (a[i] == 't' || a[i] == 'T')
-			a[i] = '7';
-		if (a[i] == 'l' || a[i] == 'L')
-			a[i] = '1';
+		z = 0;
+		while (s[z] != '\0')
+		{
+			if (o[i] == s[z])
+			{
+				o[i] = s2[z];
+			}
+			z++;
+		}
+		i++;
 	}
-
-	return (a);
+	return (o);
 }
