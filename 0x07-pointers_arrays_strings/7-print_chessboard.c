@@ -15,10 +15,10 @@ void print_chessboard(char (*a)[8])
 
 		while (j < 8)
 		{
-			putchar(a[i][j]);
+			_putchar(a[i][j]);
 			j++;
 		}
-		putchar('\n');
+		_putchar('\n');
 		i++;
 	}
 }
