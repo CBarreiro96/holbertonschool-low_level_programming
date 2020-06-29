@@ -1,6 +1,7 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
- *print_diagsums - function that prints the sum of the two diagonals of a square matrix of integers.
+ *print_diagsums - function that sum of the two diagonals of a square
  *@a: Bidimentional array.
  *@size: Variable type of integer,
  */
@@ -22,12 +23,12 @@ void print_diagsums(int *a, int size)
 
 	printf("%d, ", suma);
 
-	suma=0;
+	suma = 0;
 	i = 0;
 
 	while (i < Size)
 	{
-		if (i % (size-1) == 0 && i != (Size-1))
+		if (i % (size - 1) == 0 && i != (Size - 1))
 		{
 			suma += a[i];
 		}
