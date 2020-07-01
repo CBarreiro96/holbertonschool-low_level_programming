@@ -22,10 +22,10 @@ int Procces(int a, int i)
 {
 	int Pow = i * i;
 
-	if (Pow == a)
-		return (i);
-	else if (Pow < a)
-		Procces(a, i + 1);
-	else if (Pow > a)
+	if(Pow == a)
+		return(i);
+	else if(Pow < a)
+		return Procces(a, i + 1);
+	else
 		return (-1);
 }
