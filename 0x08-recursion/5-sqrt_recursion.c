@@ -1,4 +1,5 @@
 #include "holberton.h"
+
 /**
  *_sqrt_recursion -function that returns the natural square root of a number.
  *@n: Variable type of integer
@@ -16,14 +17,15 @@ int _sqrt_recursion(int n)
  *@i: Variable type of integer and conditional.
  *Return: It return of result about sqrt
  */
+
 int Procces(int a, int i)
 {
 	int Pow = i * i;
 
-        if (Pow == a)
-                return (i);
+	if (Pow == a)
+		return (i);
 	else if (Pow < a)
-                Procces(a, i + 1);
-        else if (Pow > a)
-                return (-1);
+		Procces(a, i + 1);
+	else if (Pow > a)
+		return (-1);
 }
