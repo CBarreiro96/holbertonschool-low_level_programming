@@ -9,6 +9,6 @@ int Procces(int a, int i);
 int Primes(int x, int i, int j);
 int is_prime_number(int n);
 int is_palindrome(char *s);
-int Lengthq(char *s);
-int pal(char *s, int l);
+int my_pal(char *s, int l);
+int get_length(char *s);
 int wildcmp(char *s1, char *s2);
