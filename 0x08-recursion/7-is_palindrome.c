@@ -10,40 +10,40 @@ int is_palindrome(char *s)
 {
 	int length;
 
-	length = Lengthq(s) - 1;
+	length = get_length(s) - 1;
 
-	return (pal(s, --length));
+	return (my_pal(s, --length));
 }
 
 /**
- * Lengthq - gets length of string
+ * get_length - gets length of string
  * @s: string
  * Return: return length of string
  */
 
-int Lengthq(char *s)
+int get_length(char *s)
 {
 	if (*s == '\0')
 		return (1);
 	else
-		return (1 + Lengthq(++s));
+		return (1 + get_length(++s));
 }
 
 /**
- * pal - recursive check of palindrome
+ * my_pal - recursive check of palindrome
  * @s: string
  * @l: length of string
  * Return: 1 if palindrome, 0 if not
  */
 
-int pal(char *s, int l)
+int my_pal(char *s, int l)
 {
 	if (*s == *(s + l))
 	{
 		if (l <= 0)
 			return (1);
 		else
-			return (pal(++s, l - 2));
+			return (my_pal(++s, l - 2));
 	}
 	else
 		return (0);
