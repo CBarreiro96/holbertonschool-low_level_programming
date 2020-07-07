@@ -4,7 +4,7 @@
 /**
  *_strdup - contains a copy of the string given as a parameter.
  *@str: Pointer
- *Return. return depend of case.
+ *Return: return depend of case.
  */
 char *_strdup(char *str)
 {
@@ -13,20 +13,20 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
-	for (i = 0; str[i] != '\0';i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		;
 	}
 
-	a = malloc(i*sizeof(char));
+	a = malloc(i * sizeof(char));
 
 	if (a == NULL)
 	{
 		return (NULL);
 	}
-	for (j = 0; j < i; j++)
+	for (j = 0 ; j < i; j++)
 	{
 		a[j] = str[j];
 	}
