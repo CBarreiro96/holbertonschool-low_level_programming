@@ -20,7 +20,7 @@ char *str_concat(char *s1, char *s2)
 
 	for (c = 0; c <= i; c++)
 		a[c] = s1[c];
-	for (c = 0; c <= j ; c++, i++)
+	for (c = 0; c < j ; c++, i++)
 		a[i] = s2[c];
 	a[n] = '\0';
 	return (a);
