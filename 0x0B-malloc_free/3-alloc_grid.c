@@ -11,20 +11,20 @@
 
 int **alloc_grid(int width, int height)
 {
-	int **x;
+	int **grid;
 	int i, j;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
 
 	/* Allow dinamyc memory */
-	x = malloc(width * sizeof(*x));
+	x = malloc(width * sizeof(*grid));
 	if (x == NULL)
 		return (NULL);
 
 	for (i = 0; i < width; i++)
 	{
-		x[i] = malloc(height * sizeof(**x));
+		x[i] = malloc(height * sizeof(**grid));
 
 		if (x[i] == NULL)
 		{
