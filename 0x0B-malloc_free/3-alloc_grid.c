@@ -18,13 +18,13 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 
 	/* Allow dinamyc memory */
-	x = (int **)malloc(width * sizeof(int *));
+	x = malloc(width * sizeof(*x));
 	if (x == NULL)
 		return (NULL);
 
 	for (i = 0; i < width; i++)
 	{
-		x[i] = (int *)malloc(height * sizeof(int));
+		x[i] = malloc(height * sizeof(**x));
 
 		if (x[i] == NULL)
 		{
