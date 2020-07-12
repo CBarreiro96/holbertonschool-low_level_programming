@@ -1,4 +1,6 @@
 #include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
   *_realloc - reallocates a memory block using malloc and free
   *@ptr: Pointer typr of pointer.
