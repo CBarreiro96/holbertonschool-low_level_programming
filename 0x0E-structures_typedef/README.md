@@ -2,7 +2,7 @@
 In this repositories you can see the solution exercise about holberton.
 ## :books: Resource :books:
 * [struct (C programming language)](https://en.wikipedia.org/wiki/Struct_(C_programming_language) "Title").
-* [typedef](https://publications.gbdirect.co.uk//c_book/chapter8/typedef.html "Tittle")
+* [typedef](https://publications.gbdirect.co.uk//c_book/chapter8/typedef.html "Hola")
 ## :trophy: Learning objective :trophy: :bulb:
 What you should learn from this project:
 * What are structures, when, why and how to use them
