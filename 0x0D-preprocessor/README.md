@@ -1,7 +1,12 @@
 # :books:  Preprocessor :books:
 In this repositories you can see the solution exercise about holberton.
-## :pencil2::clipboard: Description :pencil2: :notebook_with_decorative_cover:
+## :trophy: Learning objective :bulb:
+:diamonds: What are macros and how to use them
+:diamonds: What are the most common predefined macros
+:diamonds: How to include guard your header files
 ## :interrobang: Question :interrobang: :smiley:
 ### Create header file - define macro
-1. Call SIZE this macro as abbreviation for the token 1024.
-2. Call PI this macro as abbreviation for the token 3.14159265359.
+0. Call SIZE this macro as abbreviation for the token 1024
+1. Call PI this macro as abbreviation for the token 3.14159...
+2. Prints the name of the file it was compiled from.
+3. Function-like macros can take arguments then write function ABS(x) - absolute value of a number x
