@@ -1,8 +1,8 @@
 # :books:  Preprocessor :books:
 In this repositories you can see the solution exercise about holberton.
 ## :trophy: Learning objective :bulb:
-:diamonds: What are macros and how to use them \\
-:diamonds: What are the most common predefined macros \\
+:diamonds: What are macros and how to use them \\\\
+:diamonds: What are the most common predefined macros \\\\
 :diamonds: How to include guard your header files
 ## :interrobang: Question :interrobang: :smiley:
 ### Create header file - define macro
