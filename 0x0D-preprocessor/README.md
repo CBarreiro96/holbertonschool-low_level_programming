@@ -1,13 +1,11 @@
-# :books:  Preprocessor :books:
+# Preprocessor 
 In this repositories you can see the solution exercise about holberton.
+## :books: Resource :books:
 ## :trophy: Learning objective :trophy: :bulb:
 What you should learn from this project:
-
-:diamonds: What are macros and how to use them 
-
-:diamonds: What are the most common predefined macros
-
-:diamonds: How to include guard your header files
+* What are macros and how to use them 
+* What are the most common predefined macros
+* How to include guard your header files
 ## :interrobang: Question :interrobang: :smiley:
 ### Create header file - define macro
 0. Call SIZE this macro as abbreviation for the token 1024
