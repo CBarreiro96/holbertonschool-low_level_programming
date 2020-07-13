@@ -2,6 +2,7 @@
 In this repositories you can see the solution exercise about holberton.
 ## :trophy: Learning objective :trophy: :bulb:
 What you should learn from this project:
+
 :diamonds: What are macros and how to use them 
 
 :diamonds: What are the most common predefined macros
