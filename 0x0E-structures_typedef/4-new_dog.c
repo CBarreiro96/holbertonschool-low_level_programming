@@ -12,32 +12,36 @@ dog_t *new_dog(char *name, float age, char *owner)
 	struct dog *dogger;
 	char *n; /*Variable to name*/
 	char *o; /*Variable to owner*/
-	int i, j, a, b;
+	int i, j, a;
 
 	for (i = 0; name[i] ; i++)
 		;
 	for (j = 0 ; owner[j] ; j++)
 		;
+
 	dogger = malloc(sizeof(struct dog));
 	if (dogger == NULL)
 		return (NULL);
-	n = malloc((i + 1) * sizeof(char));
+
+	n = malloc(sizeof(char) * i + 1);
 	if (n == NULL)
 	{
 		free(dogger);
 		return (NULL);
 	}
-	o = malloc((j + 1) * sizeof(char));
+	o = malloc(sizeof(char) * j + 1);
 	if (o == NULL)
 	{
 		free(n);
 		free(dogger);
 		return (NULL);
 	}
+
 	for (a = 0; a <= i; a++)
 		n[a] = name[a];
-	for (b = 0; b <= j ; b++)
-		o[b] = owner[b];
+	for (a = 0; a <= j ; a++)
+		o[a] = owner[a];
+
 	dogger->name = n;
 	dogger->age = age;
 	dogger->owner = n;
