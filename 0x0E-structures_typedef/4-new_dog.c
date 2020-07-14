@@ -9,41 +9,40 @@
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	struct dog *dogs;
-	char *n; /*Variable to name*/
-	char *o; /*Variable to owner*/
+	struct dog *Newdog;
 	int i, j, a;
+	char *Copyname, *Copyowner;
 
-	for (i = 0; name[i] ; i++)
-		;
-	for (j = 0 ; owner[j] ; j++)
-		;
-
-	dogs = malloc(sizeof(struct dog));
-	if (dogs == NULL)
+	Newdog = malloc(sizeof(struct dog));
+	if (Newdog == NULL)
 		return (NULL);
 
-	n = malloc(sizeof(char) * i + 1);
-	if (n == NULL)
+	for (i = 0; name[i] != '\0'; i++)
+		;
+	for (j = 0; owner[j] != '\0'; j++)
+		;
+
+	Copyname = malloc(sizeof(char) * i + 1);
+	if (Copyname == NULL)
 	{
-		free(dogs);
+		free(Newdog);
 		return (NULL);
 	}
-	o = malloc(sizeof(char) * j + 1);
-	if (o == NULL)
+	Copyowner = malloc(sizeof(char) * j + 1);
+	if (Copyowner == NULL)
 	{
-		free(n);
-		free(dogs);
+		free(Copyname);
+		free(Newdog);
 		return (NULL);
 	}
-
 	for (a = 0; a <= i; a++)
-		n[a] = name[a];
-	for (a = 0; a <= j ; a++)
-		o[a] = owner[a];
+		Copyname[a] = name[a];
+	for (a = 0; a <= j; a++)
+		Copyowner[a] = owner[a];
 
-	dogs->name = n;
-	dogs->age = age;
-	dogs->owner = n;
-	return (dogs);
+	Newdog->name = Copyname;
+	Newdog->age = age;
+	Newdog->owner = Copyowner;
+
+	return (Newdog);
 }
