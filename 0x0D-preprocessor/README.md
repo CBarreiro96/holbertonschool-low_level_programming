@@ -14,3 +14,5 @@ What you should learn from this project:
 1. Call PI this macro as abbreviation for the token 3.14159...
 2. Prints the name of the file it was compiled from.
 3. Function-like macros can take arguments then write function ABS(x) - absolute value of a number x
+## Author
+Camilo Barreiro [CBarreiro96](https://github.com/CBarreiro96 "User Github")
