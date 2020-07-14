@@ -1,8 +1,8 @@
 # Preprocessor :computer:
 In this repositories you can see the solution exercise about holberton.
 ## :books: Resource :books:
-[Macros C programming](https://stackoverflow.com/questions/19846570/macros-c-programming-define-mina-b-a-b-a-b "Macros").
-[Understanding C program Compilation Process](https://www.youtube.com/watch?v=VDslRumKvRA "Compilation Procces").
+* [Macros C programming](https://stackoverflow.com/questions/19846570/macros-c-programming-define-mina-b-a-b-a-b "Macros").
+* [Understanding C program Compilation Process](https://www.youtube.com/watch?v=VDslRumKvRA "Compilation Procces").
 ## :trophy: Learning objective :trophy: :bulb:
 What you should learn from this project:
 * What are macros and how to use them 
