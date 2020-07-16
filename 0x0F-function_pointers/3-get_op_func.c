@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "3-calc.h"
+#include <stdlib.h>
 /**
 *get_op_func - Select function
 *@s: Variable type integer
@@ -19,9 +20,9 @@ int (*get_op_func(char *s))(int, int)
 
 	int i;
 
-	i = 1;
+	i = 0;
 
-	while (i <= 5)
+	while (i < 5)
 	{
 		if (ops[i].op[0] == s[0])
 			return (ops[i].f);

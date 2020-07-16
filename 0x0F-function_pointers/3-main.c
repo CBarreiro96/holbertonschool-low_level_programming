@@ -1,18 +1,17 @@
-#include <stdio.h>
 #include "3-calc.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
-*main - Start code.
-*@argc: argument count
-* @argv: arguments passed to main as an array of strings
-*Return: return result.
-*/
+ * main - main function
+ * @argc: argument count
+ * @argv: string of arguments in array
+ * Return: 0
+ */
 
 int main(int argc, char *argv[])
 {
 	int a, b;
-
 	int (*c)(int, int);
 
 	if (argc != 4)
@@ -20,7 +19,6 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-
 	if (argv[2][1] != '\0')
 	{
 		printf("Error\n");
@@ -40,4 +38,3 @@ int main(int argc, char *argv[])
 	printf("%d\n", c(a, b));
 
 	return (0);
-}
