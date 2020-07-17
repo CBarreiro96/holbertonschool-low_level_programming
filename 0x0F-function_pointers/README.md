@@ -17,6 +17,7 @@ What you should learn from this project:
 * What does a function pointer exactly hold
 * Where does a function pointer point to in the virtual memory
 ## :interrobang: Question :interrobang: :smiley:
-0. 
+0. Understant of function main you need to create or aplication pointer to function to p´rintf name.
+1.  
 ## AUTHOR
 Camilo Barreiro [CBarreiro96](https://github.com/CBarreiro96) "User Github").
