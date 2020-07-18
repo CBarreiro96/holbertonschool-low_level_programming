@@ -8,7 +8,7 @@ void print_int(va_list list)
 	printf("%d", va_arg(list, int));
 }
 /**
- * _printfloat - print float type element from va_list
+ * print_float - print float type element from va_list
  * @list: va_list passed to function
  */
 void print_float(va_list list)
@@ -17,7 +17,7 @@ void print_float(va_list list)
 }
 
 /**
- * printchar - print char type element from va_list
+ * print_char - print char type element from va_list
  * @list: va_list passed to function
  */
 void print_char(va_list list)
@@ -26,7 +26,7 @@ void print_char(va_list list)
 }
 
 /**
- * _printstr - print string element from va_list
+ * print_string - print string element from va_list
  * @list: va_list passed to function
  */
 void print_string(va_list list)
