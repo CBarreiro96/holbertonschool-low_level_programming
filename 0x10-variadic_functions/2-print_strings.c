@@ -14,7 +14,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 /* Initialize the argument list. */
 	va_start(list, n);
-/* Loop abput printf number with separator*/
+/* Loop abput printf string with separator*/
 	for (i = 0; i < n ; i++)
 	{
 		Visualize = va_arg(list, char*);
