@@ -31,7 +31,7 @@ void print_char(va_list list)
  */
 void print_string(va_list list)
 {
-	char *s;
+    char *s;
 
 	s = va_arg(list, char *);
 	if (s == NULL)
