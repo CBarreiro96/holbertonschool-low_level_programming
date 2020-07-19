@@ -62,10 +62,12 @@ void print_all(const char * const format, ...)
 	i = 0;
 	separation = "";
 	va_start(args, format);
-	while (format != NULL && format[i / 4] != '\0')
+
+	while (format != NULL && format[i/4] != '\0')
 	{
-		j = i % 4;
-		if (storage[j].type[0] == format[i / 4])
+		j = i % 4 ;
+		printf("\n%d %d\n",j, i);
+		if (storage[j].type[0] == format[i/4])
 		{
 			printf("%s", separation);
 			storage[j].funtion_printf_anything(args);
