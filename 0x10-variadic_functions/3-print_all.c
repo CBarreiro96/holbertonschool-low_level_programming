@@ -31,7 +31,7 @@ void print_char(va_list list)
  */
 void print_string(va_list list)
 {
-    char *s;
+	char *s;
 
 	s = va_arg(list, char *);
 	if (s == NULL)
@@ -63,11 +63,10 @@ void print_all(const char * const format, ...)
 	separation = "";
 	va_start(args, format);
 
-	while (format != NULL && format[i/4] != '\0')
+	while (format != NULL && format[i / 4] != '\0')
 	{
-		j = i % 4 ;
-		printf("\n%d %d\n",j, i);
-		if (storage[j].type[0] == format[i/4])
+		j = i % 4;
+		if (storage[j].type[0] == format[i / 4])
 		{
 			printf("%s", separation);
 			storage[j].funtion_printf_anything(args);
