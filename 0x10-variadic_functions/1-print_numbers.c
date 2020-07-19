@@ -1,4 +1,5 @@
 #include "variadic_functions.h"
+#include <stdio.h>
 /**
 *print_numbers - prints numbers, followed by a new line.
 *@separator: Variable type of const char ','.
@@ -6,8 +7,8 @@
 */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-/*Inicialice of variable*/
 	va_list list;
+/*Inicialice of variable*/
 	unsigned int i;
 
 /* Initialize the argument list. */
