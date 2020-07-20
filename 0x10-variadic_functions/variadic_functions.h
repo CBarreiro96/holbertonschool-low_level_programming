@@ -4,10 +4,9 @@
 #include <stdarg.h>
 #include <stdlib.h>
 /**
- * struct op - Struct op
- *
- * @op: The operator
- * @f: The function associated
+ * struct check - type struct
+ * @type: The operator type
+ * @funtion_printf_anything: The function associated
  */
 typedef struct check
 {
