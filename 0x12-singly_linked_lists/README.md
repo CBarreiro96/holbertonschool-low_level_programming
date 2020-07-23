@@ -1,7 +1,4 @@
-# :man_technologist: Singly linked lists :man_technologist:
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/66263776/88332013-80e79000-ccf3-11ea-97fb-a6046130aeed.jpg" width="300" height= "300">
-</p>
+# :man_technologist: Singly linked lists :man_technologist: <img src="https://user-images.githubusercontent.com/66263776/88332013-80e79000-ccf3-11ea-97fb-a6046130aeed.jpg" width="100" height= "50">
 
 ## Definition
 ### Diference between array and linked list
