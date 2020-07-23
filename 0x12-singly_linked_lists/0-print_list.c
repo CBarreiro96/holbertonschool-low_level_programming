@@ -14,7 +14,7 @@ size_t print_list(const list_t *h)
 
 	while (Temporaly != NULL)
 	{
-		printf("[%d] %s\n", h->len, h->str);
+		printf("[%d] %s\n", Temporaly->len, Temporaly->str);
 		Temporaly = Temporaly->next;
 		Count++;
 	}
