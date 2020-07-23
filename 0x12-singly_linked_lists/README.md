@@ -19,12 +19,12 @@ What you should learn from this project:
 * [strcut and linked list](https://www.cs.cmu.edu/~guna/15-123S11/Lectures/Lecture09.pdf "Pdf about linke list")
 ## :brain: Exrecise :brain:
 ### Write to function that:
-0. Prints all the elements of a list_t list.
-1. Returns the number of elements in a linked list_t list.
-2. Adds a new node at the beginning of a list_t list.
-3. Adds a new node at the end of a list_t list.
-4. Frees a list_t list.
-5. Prints You're beat! and yet, you must allow,\nI bore my house upon my back!\n before the main function is executed.
-6. Write a 64-bit program in assembly that prints Hello, Holberton, followed by a new line.
+0. Prints all the elements of a list_t list [click here](https://github.com/CBarreiro96/holbertonschool-low_level_programming/blob/master/0x12-singly_linked_lists/0-print_list.c "Solution problem").
+1. Returns the number of elements in a linked list_t list [click here](https://github.com/CBarreiro96/holbertonschool-low_level_programming/blob/master/0x12-singly_linked_lists/1-list_len.c "Solution problem").
+2. Adds a new node at the beginning of a list_t list [click here](https://github.com/CBarreiro96/holbertonschool-low_level_programming/blob/master/0x12-singly_linked_lists/2-add_node.c "Solution problem").
+3. Adds a new node at the end of a list_t list [click here](https://github.com/CBarreiro96/holbertonschool-low_level_programming/blob/master/0x12-singly_linked_lists/3-add_node_end.c "Solution problem").
+4. Frees a list_t list [click here](https://github.com/CBarreiro96/holbertonschool-low_level_programming/blob/master/0x12-singly_linked_lists/4-free_list.c "Solution problem").
+5. Prints You're beat! and yet, you must allow,\nI bore my house upon my back!\n before the main function is executed [click here](https://github.com/CBarreiro96/holbertonschool-low_level_programming/blob/master/0x12-singly_linked_lists/100-first.c "Solution problem")
+6. Write a 64-bit program in assembly that prints Hello, Holberton, followed by a new line [click here](https://github.com/CBarreiro96/holbertonschool-low_level_programming/blob/master/0x12-singly_linked_lists/101-hello_holberton.asm "Solution problem")
 ## AUTHOR
 Camilo Barreiro [CBarreiro96](https://github.com/CBarreiro96 "User Github").
