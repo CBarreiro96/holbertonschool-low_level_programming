@@ -6,17 +6,23 @@
 */
 size_t print_list(const list_t *h)
 {
-	const list_t *Temporaly;
 	size_t Count;
 
 	Count = 0;
-	Temporaly = h;
 
-	while (Temporaly != NULL)
+	while (h != NULL)
 	{
-		printf("[%d] %s\n", Temporaly->len, Temporaly->str);
-		Temporaly = Temporaly->next;
-		Count++;
+		if (h->str == NULL)
+		{
+			printf("[0] (nil)\n");
+			h = h->next;
+		}
+		else
+		{
+			printf("[%d] %s\n", h->len, h->str);
+			h = h->next;
+			Count++;
+		}
 	}
 
 	return (Count);
