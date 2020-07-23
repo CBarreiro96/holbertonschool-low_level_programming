@@ -1,4 +1,7 @@
-# Singly linked lists
+# :man_technologist: Singly linked lists :man_technologist:
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/66263776/88332013-80e79000-ccf3-11ea-97fb-a6046130aeed.jpg" width="300" height= "300">
+</p>
 
 ## Definition
 ### Diference between array and linked list
@@ -13,7 +16,7 @@ What you should learn from this project:
 * [Linked Lists](https://www.youtube.com/watch?v=udapt4FGY20&feature=youtu.be&t=2m10s "Video Linked Lists - Richard Buckland")
 * [Linked list Vs array](https://www.geeksforgeeks.org/linked-list-vs-array/ "Post about diferent between array and linked list")
 * [strcut and linked list](https://www.cs.cmu.edu/~guna/15-123S11/Lectures/Lecture09.pdf "Pdf about linke list")
-## Exrecise
+## :brain: Exrecise :brain:
 ### Write to function that:
 0. Prints all the elements of a list_t list.
 1. Returns the number of elements in a linked list_t list.
