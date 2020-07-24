@@ -1,4 +1,4 @@
-# <img src="https://user-images.githubusercontent.com/66263776/88332013-80e79000-ccf3-11ea-97fb-a6046130aeed.jpg" width="100" height= "50"> Singly linked lists :man_technologist: 
+# <img src="https://user-images.githubusercontent.com/66263776/88350578-252ffd80-cd19-11ea-9730-7bd7b1da9fca.jpg" width="50" height= "50"> Singly linked lists :man_technologist: 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/66263776/88342281-ba74c700-cd04-11ea-8638-97c49014595b.png" width="400" height= "200">
 </p>
@@ -17,6 +17,9 @@ What you should learn from this project:
 * [Linked Lists](https://www.youtube.com/watch?v=udapt4FGY20&feature=youtu.be&t=2m10s "Video Linked Lists - Richard Buckland")
 * [Linked list Vs array](https://www.geeksforgeeks.org/linked-list-vs-array/ "Post about diferent between array and linked list")
 * [strcut and linked list](https://www.cs.cmu.edu/~guna/15-123S11/Lectures/Lecture09.pdf "Pdf about linke list")
+### Source in the terminal
+* In the exercise 2 you need to know strdup in her terminal you need to write the next:
+>$ man strdup
 ## :brain: Exrecise :brain:
 ### Write to function that:
 0. Prints all the elements of a list_t list [click here](https://github.com/CBarreiro96/holbertonschool-low_level_programming/blob/master/0x12-singly_linked_lists/0-print_list.c "Solution problem").
