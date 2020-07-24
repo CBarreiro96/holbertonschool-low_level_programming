@@ -3,10 +3,10 @@
   <img src="https://user-images.githubusercontent.com/66263776/88342281-ba74c700-cd04-11ea-8638-97c49014595b.png" width="400" height= "200">
 </p>
 
-## Definition
+## :man_teacher: Definition :man_teacher:
 
-### Diference between array and linked list
-## use
+### :gem: Diference between array and linked list :gem:
+## :eyes: use :eyes:
 ## How use
 ## :trophy: Learning Objectives :trophy:
 What you should learn from this project:
