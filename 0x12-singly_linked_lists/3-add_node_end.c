@@ -7,7 +7,7 @@
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	ist_t *new_node;
+	list_t *new_node;
 	list_t *current_node;
 	int i;
 	char  *strcpy;
