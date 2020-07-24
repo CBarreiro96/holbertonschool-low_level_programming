@@ -7,5 +7,6 @@
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	rerturn (0);
+	list_t *new_node;
+	rerturn (new_node);
 }
