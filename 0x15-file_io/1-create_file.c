@@ -5,7 +5,6 @@
 *@text_content: size or number or letter to read.
 *Return: return 1 is it is a succes or -1 if not.
 */
-
 int create_file(const char *filename, char *text_content)
 {
 	int fdopen, status, i;

@@ -9,6 +9,7 @@
 ## :books:Source:books:
 * [File description](https://en.wikipedia.org/wiki/File_descriptor "File description")
 * [C Programming in Linux Tutorial #024 - open() read() write() Functions](https://www.youtube.com/watch?v=dP3N8g7h8gY "Video file i/O")
+* [input output sytem call in C](https://www.geeksforgeeks.org/input-output-system-calls-c-create-open-close-read-write/ "Open,write and others")
 
 ### Source in the terminal
 * You need to search this infomation with man
@@ -19,7 +20,7 @@
 >* write
 >* dprintf
 
-## :man_engineer : Learning Objectives :man_engineer:
+## :male_detective: Learning Objectives :male_detective:
 You need to learn the follow objective:
 * Look for the right source of information online
 * How to create, open, close, read and write files
