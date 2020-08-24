@@ -6,27 +6,28 @@
  */
 int main(void)
 {
-	int C = 2;
-	long int i = 1, j = 2;
-	long int Suplent;
+	long int a = 1, b = 2;
+	long int Temporary;
+	
+	
+	for(int n = 1; n< 99;n++)
+	{
+		if(n < 3)
+		{
+			printf("%d, ",n);
+		}
+		else if (n < 98)
+		{
+			printf("%ld, ", a + b);
+			Temporary = a;
+			a = b;
+			b = Temporary + a;
+		}
+		else
+		{
+			printf("%ld\n", b);
+		}
+	}
 
-	printf("%lu", i);
-        while (C <= 98)
-        {
-                if (C == 98)
-                {
-                        printf("%lu\n", j);
-                }
-                else
-                {
-                        printf("%lu, ", j);
-                }
-
-                Suplent = j;
-                j += i;
-                i = Suplent;
-                C++;
-        }
-
-        return (0);
+	return (0);
 }
