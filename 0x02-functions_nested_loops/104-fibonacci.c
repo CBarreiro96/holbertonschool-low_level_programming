@@ -8,9 +8,10 @@ int main(void)
 {
 	long int a = 1, b = 2;
 	long int Temporary;
+	int n =1;
 	
 	
-	for(int n = 1; n< 99;n++)
+	while(n < 98)
 	{
 		if(n < 3)
 		{
@@ -27,6 +28,7 @@ int main(void)
 		{
 			printf("%ld\n", b);
 		}
+		n++;
 	}
 
 	return (0);
