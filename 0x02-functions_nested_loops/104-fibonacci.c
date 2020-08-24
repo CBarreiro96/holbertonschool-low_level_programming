@@ -6,29 +6,42 @@
  */
 int main(void)
 {
-	long double a = 1, b = 2;
-	long double Temporary;
-	int n = 1;
-
-	while (n < 99)
+	unsigned long FirstNumber = 0, SecondNumber = 1, SecondPart_Solution;
+	unsigned long Sum, FirstPart1, SecondPart1, FirstPart2, SecondPart2, carry;
+	int Count = 1;
+/*Printf first 91 number of fibonacci*/
+/*After 91 unisgned long can't print all number of fibonacci*/
+	for (; Count <= 91 ; Count++)
 	{
-		if (n < 3)
+		Sum = FirstNumber + SecondNumber;
+		FirstNumber = SecondNumber;
+		SecondNumber = Sum;
+		printf("%lu, ", Sum);
+	}
+	/*Divide of number*/
+	FirstPart1 = FirstNumber / 100000;
+	SecondPart1 = FirstNumber % 100000;
+	FirstPart2 = SecondNumber / 100000;
+	SecondPart2 = SecondNumber % 100000;
+/*print number after 98*/
+	for (; Count < 99 ; Count++)
+	{
+		carry = (SecondPart1 + SecondPart2) / 100000;
+		SecondPart_Solution = (SecondPart1 + SecondPart2) - (carry * 100000);
+		Sum = (FirstPart1 + FirstPart2) + carry;
+		SecondPart1 = SecondPart2;
+		SecondPart2 = SecondPart_Solution;
+		FirstPart1 = FirstPart2;
+		FirstPart2 = Sum;
+
+		if (Count == 98)
 		{
-			printf("%d, ", n);
-		}
-		else if (n < 98)
-		{
-			printf("%.0Lf, ", a + b);
-			Temporary = a;
-			a = b;
-			b = Temporary + a;
+			printf("%lu%lu\n", Sum, SecondPart_Solution);
 		}
 		else
 		{
-			printf("%.0Lf\n", a + b);
+			printf("%lu%lu, ", Sum, SecondPart_Solution);
 		}
-		n++;
 	}
-
 	return (0);
 }
