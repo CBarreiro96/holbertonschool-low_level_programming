@@ -6,11 +6,11 @@
  */
 int main(void)
 {
-	long int a = 1, b = 2;
-	long int Temporary;
+	unsigned long int a = 1, b = 2;
+	unsigned long int Temporary;
 	int n = 1;
 
-	while (n < 98)
+	while (n < 99)
 	{
 		if (n < 3)
 		{
@@ -23,7 +23,7 @@ int main(void)
 			a = b;
 			b = Temporary + a;
 		}
-		else
+		else 
 		{
 			printf("%ld\n", b);
 		}
