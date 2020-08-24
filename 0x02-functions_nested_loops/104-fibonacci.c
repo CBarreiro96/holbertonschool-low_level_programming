@@ -8,14 +8,13 @@ int main(void)
 {
 	long int a = 1, b = 2;
 	long int Temporary;
-	int n =1;
-	
-	
-	while(n < 98)
+	int n = 1;
+
+	while (n < 98)
 	{
-		if(n < 3)
+		if (n < 3)
 		{
-			printf("%d, ",n);
+			printf("%d, ", n);
 		}
 		else if (n < 98)
 		{
