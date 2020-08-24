@@ -6,8 +6,8 @@
  */
 int main(void)
 {
-	unsigned long int a = 1, b = 2;
-	unsigned long int Temporary;
+	long double a = 1, b = 2;
+	long double Temporary;
 	int n = 1;
 
 	while (n < 99)
@@ -18,14 +18,14 @@ int main(void)
 		}
 		else if (n < 98)
 		{
-			printf("%ld, ", a + b);
+			printf("%.0Lf, ", a + b);
 			Temporary = a;
 			a = b;
 			b = Temporary + a;
 		}
-		else 
+		else
 		{
-			printf("%ld\n", b);
+			printf("%.0Lf\n", a + b);
 		}
 		n++;
 	}
