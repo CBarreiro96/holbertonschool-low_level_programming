@@ -1,19 +1,4 @@
 # 0x01. C - Variables, if, else, while
-
-## Resources:books:
-Read or watch:
-* [Everything you need to know to start with C](https://intranet.hbtn.io/rltoken/lbqOMfcseEq0Y-7al_j1Ag)
-* [Keywords and identifiers](https://intranet.hbtn.io/rltoken/ckqC9BrBcMmv-DLmBauaWQ)
-* [integers](https://intranet.hbtn.io/rltoken/Oau_6LT7-3IIt5ew_3Ac6g)
-* [Arithmetic Operators in C](https://intranet.hbtn.io/rltoken/r4hrHzg2X9JjnKj8sP_SAw)
-* [If statements in C](https://intranet.hbtn.io/rltoken/W93uajwXtW3WOxOaeBtF-A)
-* [if…else statement](https://intranet.hbtn.io/rltoken/PMD6eKdkj2RmIpagtABihw)
-* [Relational operators](https://intranet.hbtn.io/rltoken/dCy4644-X_WJMYxRZwCfFQ)
-* [Logical operators](https://intranet.hbtn.io/rltoken/gJzJXQoEdEN1Oxcutp_76Q)
-* [while loop in C](https://intranet.hbtn.io/rltoken/Qhq1p5UcR72-VXFJ_iAqWQ)
-* [While loop](https://intranet.hbtn.io/rltoken/RY9a1EDxRKNNHhxbJ6Pn_g)
-
----
 ## Learning Objectives:bulb:
 What you should learn from this project:
 
