@@ -2,41 +2,37 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * argstostr - concatenate all arguments of your program with newline
+ * argstostr - concatenates all arguments of program.
  * @ac: argument count
- * @av: double pointer to array of strings passed to main
- * Return: Null if fail, else return pointer to new string
+ * @av: pointer to argument vectors
+ * Return: pointer with  a new string.
  */
-
 char *argstostr(int ac, char **av)
 {
-	char *a, *Allow;
-	int i, j, total;
+	int i, j, len, bufferlen;
+	char *p;
 
-	if (ac == 0 || av == NULL)
+	if (ac == 0)
 		return (NULL);
-	for (i = 0, total = 0; i < ac; i++)
-	{
-		for (j = 0; *(*(av + i) + j) != '\0'; j++, total++)
-			;
-		total++;
-	}
-
-	a = malloc(total * sizeof(char));
-	if (a == NULL)
+	if (av == NULL)
 		return (NULL);
-	Allow = a;
 
-	for (i = 0; i < ac; i++)
+	i = j = len = bufferlen = 0;
+	for (i = 0; av[i]; i++)
 	{
-		for (j = 0; av[i][j] != '\0'; j++)
-		{
-			*a = av[i][j];
-			a++;
-		}
-		*a = '\n';
-		a++;
+		for (j = 0; av[i][j]; j++)
+			len++;
 	}
-
-	return (Allow);
+	p = (char *)malloc(len * sizeof(char) + ac + 1);
+	if (p == NULL)
+		return (NULL);
+	for (i = 0; av[i]; i++)
+	{
+		for (j = 0; av[i][j]; j++, bufferlen++)
+			p[bufferlen] = av[i][j];
+		p[bufferlen] = '\n';
+		bufferlen++;
+	}
+	p[bufferlen] = '\0';
+	return (p);
 }
