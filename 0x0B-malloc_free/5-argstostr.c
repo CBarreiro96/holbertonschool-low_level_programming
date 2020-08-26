@@ -10,31 +10,31 @@
 char *argstostr(int ac, char **av)
 {
 	char  *concatenation;
-	int i, j,lenconcatenation, len;
+	int i, j, lenconcatenation, len;
 
-        i=j=lenconcatenation=len = 0;
+	i = j = lenconcatenation = len = 0;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
-        for (i = 0; av[i] != NULL; i++)
+	for (i = 0; av[i] != NULL; i++)
 	{
 		for (j = 0; av[i][j] != '\0'; j++)
 			len++;
-                len++;
-        }
-        len++;
+		len++;
+	}
+	len++;
 	concatenation = malloc(len * sizeof(char));
 	if (concatenation == NULL)
 		return (NULL);
 
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j] != '\0'; j++,lenconcatenation++)
+		for (j = 0; av[i][j] != '\0'; j++, lenconcatenation++)
 			concatenation[lenconcatenation] = av[i][j];
 		concatenation[lenconcatenation] = '\n';
 		lenconcatenation++;
 	}
-        concatenation[lenconcatenation] = '\0';
+	concatenation[lenconcatenation] = '\0';
 	return (concatenation);
 }
