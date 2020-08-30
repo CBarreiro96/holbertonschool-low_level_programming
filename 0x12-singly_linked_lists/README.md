@@ -1,4 +1,4 @@
-#<img src="https://user-images.githubusercontent.com/66263776/88350578-252ffd80-cd19-11ea-9730-7bd7b1da9fca.jpg" width="50" height= "50"> Singly linked lists :man_technologist:<p align="center">
+<img src="https://user-images.githubusercontent.com/66263776/88350578-252ffd80-cd19-11ea-9730-7bd7b1da9fca.jpg" width="50" height= "50"> Singly linked lists :man_technologist:<p align="center">
 <img src="https://user-images.githubusercontent.com/66263776/88342281-ba74c700-cd04-11ea-8638-97c49014595b.png" width="400" height= "200"></p>
 
 ## :man_teacher: Definition :man_teacher:
