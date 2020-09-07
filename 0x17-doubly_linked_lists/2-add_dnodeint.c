@@ -1,8 +1,9 @@
 #include "lists.h"
 /**
- * add_dnodeint -
- *
- * Return: 
+ * add_dnodeint -Write a function that adds a new node
+ *@head: Variable type of struct
+ *@n: Variable type of const type of integer
+ *Return: Return of adrres about varible
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
