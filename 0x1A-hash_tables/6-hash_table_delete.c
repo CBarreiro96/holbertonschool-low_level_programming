@@ -1,6 +1,5 @@
 
 #include "hash_tables.h"
-
 /**
  * hash_table_delete - delete given hash table
  * @ht: hash table given
