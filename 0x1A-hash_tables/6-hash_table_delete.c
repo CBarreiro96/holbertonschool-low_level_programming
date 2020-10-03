@@ -1,5 +1,5 @@
-
 #include "hash_tables.h"
+
 /**
  * hash_table_delete - delete given hash table
  * @ht: hash table given
@@ -7,7 +7,7 @@
 void hash_table_delete(hash_table_t *ht)
 {
 	hash_node_t *tmp, *prev;
-	unsigned long int current, i;
+	unsigned long int sz, i;
 
 	if (ht == NULL)
 		return;
@@ -17,7 +17,7 @@ void hash_table_delete(hash_table_t *ht)
 		return;
 	}
 
-	for (i = 0, current = ht->size; i < current; i++)
+	for (i = 0, sz = ht->size; i < sz; i++)
 	{
 		tmp = ht->array[i];
 		while (tmp)
@@ -33,3 +33,4 @@ void hash_table_delete(hash_table_t *ht)
 	free(ht->array);
 	free(ht);
 }
+
