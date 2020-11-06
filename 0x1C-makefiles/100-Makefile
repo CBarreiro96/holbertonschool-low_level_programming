@@ -1,23 +1,22 @@
-# Makefilke with some requirement
+# Basic Make file, but with flags
 
-CC = gcc
-SRC = main.c holberton.c
-OBJ = $(SRC:%.c=%.o)
-NAME = holberton
-RM = rm -f
-CFLAGS = -Wall -Werror -Wextra -pedantic
+CC=gcc
+SRC=holberton.c main.c
+OBJ=$(SRC:.c=.o)
+NAME=holberton
+CFLAGS=-Wall -Werror -Wextra -pedantic
 
-all:	$(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+.PHONY: clean oclean fclean re all $(NAME)
+all: $(SRC) $(NAME)
 
-clean:
-	$(RM) *~ $(NAME)
+$(NAME): m.h $(OBJ)
+	$(CC) $(OBJ) -o $@
+
+fclean: oclean clean
 
 oclean:
 	$(RM) $(OBJ)
-
-fclean:
+clean:
 	$(RM) *~ $(NAME)
-	$(RM) $(OBJ)
 
-re:	oclean all
+re: oclean all
