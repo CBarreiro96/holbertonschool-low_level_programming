@@ -1,9 +1,9 @@
-<center>
 <img src="https://user-images.githubusercontent.com/66263776/98416555-43fa9b80-204d-11eb-800a-df8e19b62655.jpg" width="700" height= "200"> 
-</center>
 
 # <img src="https://user-images.githubusercontent.com/66263776/98705433-b6b88f00-234b-11eb-97b7-cb193f7424f4.png" width="20" height= "30">    0x1E. C - Search Algorithms <img src="https://user-images.githubusercontent.com/66263776/98705433-b6b88f00-234b-11eb-97b7-cb193f7424f4.png" width="20" height= "30">
 
+
+## :memo: Activities :memo:
 ### [Linear search]() 
 Write a function that searches for a value in an array of integers using the Linear search algorithm
 
@@ -65,7 +65,6 @@ Found 999 at index: -1
 
 ```
 
-## :memo: Activities :memo:
 
 ### [Binary search ]()
 Write a function that searches for a value in a sorted array of integers using the Binary search algorithm
