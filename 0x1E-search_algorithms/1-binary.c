@@ -27,7 +27,7 @@ void print_array(int *array, int begin, int final)
  */
 int binary_search(int *array, size_t size, int value)
 {
-	int begin, final, midpoint, objetive;
+	int begin, final, middle, objetive;
 
 	objetive = value;
 	final = size - 1;
@@ -36,17 +36,17 @@ int binary_search(int *array, size_t size, int value)
 		return (-1);
 
 	begin = 0;
-	/*Search for midpoints in the array*/
+	/*Search for middle in the array*/
 	while (begin <= final)
 	{
 		print_array(array, begin, final);
-		midpoint = (begin + final) / 2;
-		if (array[midpoint] == objetive)
-			return (midpoint);
-		else if (array[midpoint] < objetive)
-			begin = midpoint + 1;
+		middle = (begin + final) / 2;
+		if (array[middle] == objetive)
+			return (middle);
+		else if (array[middle] < objetive)
+			begin = middle + 1;
 		else
-			final = final - 1;
+			final = middle - 1;
 
 	}
 
