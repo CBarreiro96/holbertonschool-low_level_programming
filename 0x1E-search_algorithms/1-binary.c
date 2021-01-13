@@ -3,19 +3,18 @@
 /**
  * print_array - print the current array given rules on format
  * @array: array to print
- * @inc: starting incrementer index
- * @size: increment up to this size
+ * @begin: starting incrementer index
+ * @final: LAST POSTION OF ARRAY
  */
-void print_array(int *array, size_t inc, size_t size)
+void print_array(int *array, int begin, int final)
 {
+	int i;
+
 	printf("Searching in array: ");
-	for (; inc <= size; inc++)
-	{
-		printf("%d", array[inc]);
-		if (inc < size)
-			printf(", ");
-	}
-	printf("\n");
+	for (i = begin; i < final; i++)
+		printf("%d, ", array[i]);
+
+	printf("%d\n", array[i]);
 }
 
 /**
@@ -28,26 +27,26 @@ void print_array(int *array, size_t inc, size_t size)
  */
 int binary_search(int *array, size_t size, int value)
 {
-	int begin, Final, midpoint, objetive;
+	int begin, final, midpoint, objetive;
 
 	objetive = value;
-	Final = size - 1;
+	final = size - 1;
 
 	if (array == NULL || size == 0)
 		return (-1);
 
 	begin = 0;
 	/*Search for midpoints in the array*/
-	while (begin <= Final)
+	while (begin <= final)
 	{
-		print_array(array, begin, Final);
-		midpoint = (begin + Final) / 2;
+		print_array(array, begin, final);
+		midpoint = (begin + final) / 2;
 		if (array[midpoint] == objetive)
 			return (midpoint);
 		else if (array[midpoint] < objetive)
 			begin = midpoint + 1;
 		else
-			Final = Final - 1;
+			final = final - 1;
 
 	}
 
