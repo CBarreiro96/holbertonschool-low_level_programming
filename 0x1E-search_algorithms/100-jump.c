@@ -33,12 +33,12 @@ int jump_search(int *array, size_t size, int value)
 
 	if (jump > (size - 1))
 		jump = size - 1;
-	
+
 	while (prev <= jump && array[prev] <= objetive)
 	{
 		printf("Value checked array[%lu] = [%d]\n", prev, array[prev]);
-		if (array[prev]== objetive)
-			return(prev);
+		if (array[prev] == objetive)
+			return (prev);
 		prev++;
 	}
 	return (-1);
