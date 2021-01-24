@@ -15,7 +15,7 @@ Write a function that searches for a value in an array of integers using the Lin
 * If value is not present in array or if array is NULL, your function must return -1
 * Every time you compare a value in the array to the value you are searching, you have to print this value (see example below)
 
-```
+```C
 user@0x1E-search_algorithms$ cat 0-main.c 
 #include <stdio.h>
 #include <stdlib.h>
@@ -79,7 +79,7 @@ Write a function that searches for a value in a sorted array of integers using t
 * If value is not present in array or if array is NULL, your function must return -1
 * You must print the array being searched every time it changes. (e.g. at the beginning and when you search a subarray) (See example)
 
-```
+```C
 user@0x1E-search_algorithms$ cat 1-main.c 
 #include <stdio.h>
 #include <stdlib.h>
@@ -140,7 +140,7 @@ What is the space complexity (worst case) of a binary search in an array of size
 ###  [Big O #4 ](https://github.com/CBarreiro96/holbertonschool-low_level_programming/blob/master/0x1E-search_algorithms/6-O)
 What is the space complexity of this function / algorithm?
 
-```
+```C
 int **allocate_map(int n, int m)
 {
      int **map;
@@ -167,7 +167,7 @@ Write a function that searches for a value in a sorted array of integers using t
 * You have to use the square root of the size of the array as the jump step.
 * You can use the sqrt() function included in <math.h> (don’t forget to compile with -lm)
 Every time you compare a value in the array to the value you are searching for, you have to print this value (see example)
-```
+```C
 user@0x1E-search_algorithms$ cat 100-main.c 
 #include <stdio.h>
 #include <stdlib.h>
@@ -231,7 +231,7 @@ Write a function that searches for a value in a sorted array of integers using t
 * If value is not present in array or if array is NULL, your function must return -1
 * To determine the probe position, you can use : size_t pos = low + (((double)(high - low) / (array[high] - array[low])) * (value - array[low]))
 * Every time you compare a value in the array to the value you are searching, you have to print this value (see example below)
-```
+```C
 user@0x1E-search_algorithms$ cat 102-main.c 
 #include <stdio.h>
 #include <stdlib.h>
@@ -282,7 +282,7 @@ Write a function that searches for a value in a sorted array of integers using t
 
 Once you’ve found the good range, you need to use a binary search:
 Every time you split the array, you have to print the new array (or subarray) you’re searching in (See example)
-```
+```C
 user@0x1E-search_algorithms$ cat 103-main.c 
 #include <stdio.h>
 #include <stdlib.h>
